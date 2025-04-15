@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/ol-geocoder.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title>Jena Park and Walking Trails - Cameras and Networking</title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+<script src="resources/proj4.js"></script>
+        <script>proj4.defs('EPSG:3857','+proj=merc +a=6378137 +b=6378137 +lat_ts=0 +lon_0=0 +x_0=0 +y_0=0 +k=1 +units=m +nadgrids=@null +wktext +no_defs');</script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/ol-geocoder.js"></script>
+        <script src="layers/TownHall_1.js"></script><script src="layers/ParkBoundary_2.js"></script><script src="layers/ParkingAreas_3.js"></script><script src="layers/ParkFeatures_4.js"></script><script src="layers/WalkingBikeTrail_5.js"></script><script src="layers/LampPosts_6.js"></script><script src="layers/ParkBuildings_7.js"></script><script src="layers/PTZCameras_8.js"></script><script src="layers/IPCameras_9.js"></script><script src="layers/180Cameras_10.js"></script><script src="layers/BridgeCoverage_11.js"></script><script src="layers/SlaveBridges_12.js"></script><script src="layers/MasterBridges_13.js"></script><script src="layers/Switches_14.js"></script><script src="layers/BoysBallField_15.js"></script><script src="layers/GirlsBallField_16.js"></script><script src="layers/WoodedTrail_17.js"></script><script src="layers/EdwardsDrive_18.js"></script><script src="layers/DixieParkingLot_19.js"></script><script src="layers/DogtrotTrail_20.js"></script><script src="layers/TennisCourts_21.js"></script><script src="layers/AmpitheaterTrail_22.js"></script><script src="layers/WalkingTrail_23.js"></script>
+        <script src="styles/TownHall_1_style.js"></script><script src="styles/ParkBoundary_2_style.js"></script><script src="styles/ParkingAreas_3_style.js"></script><script src="styles/ParkFeatures_4_style.js"></script><script src="styles/WalkingBikeTrail_5_style.js"></script><script src="styles/LampPosts_6_style.js"></script><script src="styles/ParkBuildings_7_style.js"></script><script src="styles/PTZCameras_8_style.js"></script><script src="styles/IPCameras_9_style.js"></script><script src="styles/180Cameras_10_style.js"></script><script src="styles/BridgeCoverage_11_style.js"></script><script src="styles/SlaveBridges_12_style.js"></script><script src="styles/MasterBridges_13_style.js"></script><script src="styles/Switches_14_style.js"></script><script src="styles/BoysBallField_15_style.js"></script><script src="styles/GirlsBallField_16_style.js"></script><script src="styles/WoodedTrail_17_style.js"></script><script src="styles/EdwardsDrive_18_style.js"></script><script src="styles/DixieParkingLot_19_style.js"></script><script src="styles/DogtrotTrail_20_style.js"></script><script src="styles/TennisCourts_21_style.js"></script><script src="styles/AmpitheaterTrail_22_style.js"></script><script src="styles/WalkingTrail_23_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
